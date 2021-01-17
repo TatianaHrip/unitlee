@@ -7,10 +7,10 @@ import static org.junit.Assert.*;
 public class CashbackHackServiceTest {
 
     @Test
-    public void testRemainReturn10IfAmount990() {
+    public void testRemainReturn0IfAmount1000() {
         CashbackHackService cashbackHackService = new CashbackHackService();
-        int expected = 10;
-        int actual = cashbackHackService.remain(990);
+        int expected = 1000;
+        int actual = cashbackHackService.remain(0);
         assertEquals(actual, expected);
 
     }
